@@ -1,0 +1,46 @@
+/* mystyle.css */
+h1 {
+    font-size: 37px;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    margin: 0px;
+    padding: 20px;
+}
+  
+a {
+    color:darkolivegreen;
+}
+
+#grid ul {
+    font-size: 14px;
+    font-style: italic;
+    border-right: 2px dotted lightgray;
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+}
+  
+body {
+    margin: 0px;
+    background-color:beige ;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+  
+@media (max-width: 800px) {
+    #grid {
+        display: block;    
+    }
+  
+    #grid ol {
+        border-right: none;
+    }
+  
+    h1 {
+        border-bottom: none;
+    }  
+}
